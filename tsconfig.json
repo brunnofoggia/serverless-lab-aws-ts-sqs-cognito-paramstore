@@ -1,0 +1,62 @@
+{
+    "include": [
+        "./src/**/*"
+    ],
+    "compilerOptions": {
+        "module": "commonjs",
+        "declaration": true,
+        "removeComments": true,
+        "emitDecoratorMetadata": true,
+        "experimentalDecorators": true,
+        "allowSyntheticDefaultImports": true,
+        "target": "es2020",
+        "sourceMap": true,
+        "outDir": "./dist",
+        "baseUrl": "./src",
+        "incremental": true,
+        "skipLibCheck": true,
+        "strictNullChecks": false,
+        "noImplicitAny": false,
+        "strictBindCallApply": false,
+        "forceConsistentCasingInFileNames": false,
+        "noFallthroughCasesInSwitch": false,
+        "esModuleInterop": true,
+        "resolveJsonModule": true,
+        "typeRoots": [
+            "./src/@types",
+            "./node_modules/@types"
+        ],
+        "paths": {
+            "@/*": [
+                "*"
+            ],
+            "@modules/*": [
+                "modules/*"
+            ],
+            "@common/*": [
+                "modules/common/*"
+            ],
+            "@app/*": [
+                "modules/app/*"
+            ],
+            "@config/*": [
+                "config/*"
+            ],
+            "@generic/*": [
+                "modules/_generic/*"
+            ],
+            "@database/*": [
+                "modules/database/*"
+            ],
+            "@auth/*": [
+                "modules/auth/*"
+            ],
+            "@admin/*": [
+                "modules/admin/*"
+            ],
+            "@test/*": [
+                "../test/*"
+            ],
+        }
+    },
+}
